@@ -1,0 +1,56 @@
+
+body {
+    padding: 5% 10%;
+    background-color: white;
+    display: grid;
+}
+.pdt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: stretch;
+    grid-gap: 35px;
+}
+
+.pdt-img {
+    display: grid;
+    border: 5px solid #dddddd;
+    padding: 1%;
+    place-items: center;
+}
+
+#product-image {
+    width: 280px;
+    height: 400px;
+}
+
+.price-details {
+    font-size: x-large;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-sizing: content-box;
+}
+
+.old-price {
+    color: #666666;
+}
+
+hr {
+    color: #f0f0f0;
+}
+
+button#add-to-cart {
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    height: 49px;
+    font-size: large;
+}
+
+#quantity {
+    width: 50px;
+    height: 35px;
+    float: left;
+    font-size: large;
+    border: 2px solid #dddddd;
+    padding: 1%;
+}

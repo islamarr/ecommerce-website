@@ -1,0 +1,116 @@
+@media only screen and (max-width: 1175px){
+    *{
+        box-sizing: border-box;
+    }
+    /* header style */
+    header nav .big{
+        display: none;
+    }
+    header nav .navbar-med  {
+        display: block;
+        padding: 10px 30px;
+        width: 80%;
+        margin: auto;
+    }
+    header nav .navbar-med ul{
+        display: none;
+        text-align: center;
+    }
+
+    header nav .navbar-med h1{
+        margin: 0px;
+    }
+    header nav .navbar-med #show{
+        float: right;
+        margin-top: 9px;
+        border: none;
+        color: var(--main-color);
+        font-size: 22px;
+        background-color: var(--bk-color);
+    }
+    header nav .navbar-med #hide{
+        border: none;
+        color: purple;
+        font-size: 22px;
+        background-color: var(--bk-color);
+    }
+    /* Slider Style */
+    .slider .container .container{
+        width: 100%;
+    }
+    .slider .container .container .content p{
+        padding: 0px 20px;
+    }
+    /* Trending Style */
+    .trending .trend-box {
+        display: block;
+    }
+    .trending .trend-box .trend-category{
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        margin-bottom: 50px;
+        font-size: 2rem;
+    }
+    .trending .trend-box .trend-category img {
+        width:  50%;
+    }
+    /* Category Style */
+    .category .category-box{
+        overflow: hidden;
+    }
+    .category .category-box ul {
+        margin: 10px 10px;
+        padding: 0px;
+        box-shadow: 2px 2px 15px 5px var(--bk-color);
+        display: block;
+    }
+    .category .category-box ul li{
+        width: 46%;
+        margin: 0px 1%;;
+        padding: 20px 40px;
+        text-align: center;
+        transition: 0.7s;
+        margin-top: 20px;
+    }
+    .hotsale .saleLeftSide {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hotsale .saleLeftSide p{
+        position: static;
+        margin: 10px 10px;
+        font-size: 30px;   
+        transform: translateX(0px);
+
+    }
+    .hotsale .saleRightSide {
+        margin: 0 auto;
+        float: none;
+    }
+    .hotsale .saleRightSide img{
+        transform: translateY(35px);
+    }
+    .hotsale .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contact-us .contact-content{
+        flex-wrap: wrap;
+    }
+    .contact-us .contact-content .map,.contact-us .contact-content .form{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contact-us .contact-content .form input,.contact-us .contact-content .form textarea {
+        margin: 20px auto;
+    }
+    footer p {
+        width: 80%;
+    }
+
+}
+

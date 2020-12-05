@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- Css style link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/home-style.css">
+    <link rel="stylesheet" href="assets/style/home-responsive.css">
+</head>
+<body>
+<!-- Loader element --> 
+    <div id="loader" class="preloader">
+        <div class="loader"></div>
+    </div>  
+<!-- Loader Ended here -->
+
+<!-- Start header here -->
+    <header id="home">
+        <nav>
+            <div class="big">
+            <div class="container navbar">
+                <h1>Logo</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about-us">About</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li>
+                            <a href="cart.html">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="cartCounter"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="navbar-med">
+                <h1 id="center">
+                    Logo
+                </h1>
+                <button id="show" onclick="show();">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul id="bar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart"></i>
+                    <span class="cartCounter"></span>
+                    </a></li>
+                    <button id="hide" onclick="hide();"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<!-- End header here -->
+<!-- Body starts here -->
+<main>
+    <!-- Hot Sale -->
+        <article class="hotsale">
+            <div class="container">
+                <div class="saleLeftSide">
+                    <h2>
+                        CHECK OUT <br>
+                        <span>OUR LATEST</span> OFFERS
+                    </h2>
+                    <p>
+                        <button> <a href="#categories"> Shop Now </a></button>
+                    </p>
+                </div>
+                <div class="saleRightSide">
+                    <img src="assets/images/bg.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+            </div>
+        </article>
+    <!-- Hot Sale Ended here -->
+    <!-- Slider Starts Here -->
+    <article class="slider">
+        <div class="container"> 
+            <div class="container">
+                <div class="content">
+                    <div class="discount">
+                        <p class="text-center">Discount <span> 50% </span>on the latest collection</p>
+                        <img class="slideImage" src="assets/images/discount1.jpg">
+                    </div>
+                    <div class="discount">
+                        <p class="text-center">Discount <span> 50% </span>on the latest collection</p>
+                        <img class="slideImage" src="assets/images/discount2.jpg">
+                    </div>    
+                    <div class="discount">
+                        <p class="text-center">Discount <span> 50% </span>on the latest collection</p>
+                        <img class="slideImage" src="assets/images/discount.jpg">
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </article >
+    <div id="categories" class="container"><hr></div>
+    <!-- Slider Ends here -->
+    <!-- Trending Starts Here -->
+    <article class="trending" >
+        <h3 class="text-center">Trending <span> Categories </span></h3>
+        <div class="trend-box">
+            <a href="#categories">
+                <div class="trend-category">
+                    <img src="assets/images/1.jpg" alt="">
+                    <h4 class="text-center">Laptop Bags</h4>
+                </div>
+            </a>
+            <a href="#categories">
+                <div class="trend-category">
+                <img src="assets/images/2.jpg" alt="">
+                <h4 class="text-center">Headphones</h4>
+                </div>
+            </a>
+            <a href="#categories">
+                <div class="trend-category">
+                    <img src="assets/images/1.jpg" alt="">
+                    <h4 class="text-center">Accessories</h4>
+                </div>
+            </a>
+        </div>
+
+    </article>
+    <!-- Trending Ends Here -->
+    <!-- Normal category Starts here -->
+    <article class="category">
+        <section class="bags box"> 
+            <h3 class="text-center"> Featured <span> collection</span> </h3>
+            <div class="category-box">
+                <ul>
+                    <li>
+                        <a href="product_details.html?id=1">
+                            <div class="productImage">
+                            <img src="assets/images/collection1.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Fjallraven</p><hr>
+                                <p>$109.95</p>
+                            </div>
+                        </a>
+                            <button id="1" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                    <li>
+                        <a href="product_details.html?id=2">
+                            <div class="productImage">
+                                <img src="assets/images/collection2.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Mens Casual Premium Slim </p> <hr>
+                                <p>$80.00</p>
+                            </div>
+                        </a>
+                            <button id="2" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=3">
+                            <div class="productImage">
+                                <img src="assets/images/collection3.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Mens Cotton Jacket</p><hr>
+                                <p>$55.99</p>
+                            </div>
+                        </a>
+                            <button id="3" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=4">
+                            <div class="productImage">
+                                <img src="assets/images/collection4.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Mens Casual Slim Fit</p> <hr>
+                                <p>$15.99</p>
+                            </div>
+                        </a>
+                            <button id="4" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- Normal category End here -->
+        <!-- Women's Accessories category Starts here -->
+        <section class="headphones box"> 
+            <h3 class="text-center"> Featured <span> Women's Accessories</span> collection </h3>
+            <div class="category-box">
+                <ul>
+                    <li>
+                        <a href="product_details.html?id=5">
+                            <div class="productImage">
+                                <img src="assets/images/collection5.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>John Hardy Women's</p> <hr>
+                                <p>$695.00</p>
+                            </div>
+                        </a>
+                            <button id="5" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                    <li>
+                        <a href="product_details.html?id=6">
+                            <div class="productImage">
+                                <img src="assets/images/collection6.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Solid Gold Petite Micropave</p> <hr>
+                                <p>$168.00</p>
+                            </div>
+                        </a>
+                            <button id="6" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=7">
+                            <div class="productImage">
+                                <img src="assets/images/collection7.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>White Gold Plated Princess</p> <hr>
+                                <p>$9.99</p>
+                            </div>
+                        </a>
+                            <button id="7" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=8">
+                            <div class="productImage">
+                                <img src="assets/images/collection8.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Pierced Owl Rose Gold</p> <hr>
+                                <p>$10.99</p>
+                            </div>
+                        </a>
+                            <button id="8" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- Women's Accessories category Ends here here -->
+        <!-- Electronics category Starts here -->
+        <section class="mouse box"> 
+            <h3 class="text-center"> Featured <span> Electronics</span> collection </h3>
+            <div class="category-box">
+                <ul>
+                    <li>
+                        <a href="product_details.html?id=9">
+                            <div class="productImage">
+                                <img src="assets/images/collection9.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Portable External Hard Drive</p> <hr>
+                                <p>$64.00</p>
+                            </div>
+                        </a>
+                            <button id="9" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                    <li>
+                        <a href="product_details.html?id=10">
+                            <div class="productImage">
+                                <img src="assets/images/collection10.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>SanDisk SSD PLUS 1TB</p> <hr>
+                                <p>$109.00</p>
+                            </div>
+                        </a>
+                            <button id="10" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=11">
+                            <div class="productImage">
+                                <img src="assets/images/collection11.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Silicon Power 256GB</p> <hr>
+                                <p>$109.00</p>
+                            </div>
+                        </a>
+                            <button id="11" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>               
+                    <li>
+                        <a href="product_details.html?id=12">
+                            <div class="productImage">
+                                <img src="assets/images/collection12.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>WD 4TB Gaming Drive</p> <hr>
+                                <p>$114.00</p>
+                            </div>
+                        </a>
+                            <button id="12" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- Electronic category Ends here here --> 
+        <!-- New Coming category Starts here -->
+        <section class="phone box"> 
+            <h3 class="text-center"> Featured <span> New Coming </span> collection </h3>
+            <div class="category-box">
+                <ul>
+                    <li>
+                        <a href="product_details.html?id=13">
+                            <div class="productImage">
+                                <img src="assets/images/collection13.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>WAcer SB220Q bi 21.5</p> <hr>
+                                <p>$599.00</p>
+                            </div>
+                        </a>
+                            <button id="13" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                    <li>
+                        <a href="product_details.html?id=15">
+                            <div class="productImage">
+                                <img src="assets/images/collection14.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Samsung Gaming Monitor</p> <hr>
+                                <p>$999.99</p>
+                            </div>
+                        </a>
+                            <button id="14" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=15">
+                            <div class="productImage">
+                                <img src="assets/images/collection15.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>BIYLACLESEN Women's</p> <hr>
+                                <p>$56.99</p>
+                            </div>
+                        </a>
+                            <button id="15" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>                
+                    <li>
+                        <a href="product_details.html?id=16">
+                            <div class="productImage">
+                                <img src="assets/images/collection16.jpg" alt="">
+                            </div>
+                            <div class="productBody">
+                                <p>Women's Removable Hooded</p> <hr>
+                                <p>$29.95</p>
+                            </div>
+                        </a>
+                            <button id="16" onclick="addItem(this.id);">
+                                add to Cart <i class="fa fa-shopping-cart"></i>
+                            </button>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+        <!-- Mouse category Ends here here --> 
+        <div class="container" id="about-us">
+            <hr>
+            <h3 class="text-center">About <span> Us </span></h3>
+        </div>
+    </article> 
+    <!-- About Starts here -->
+    <section class="about-us" >
+        <div class="container">
+            <div class="content">
+                <h4>This header of the ecommerce website...</h4>
+                <p>
+                    This Website is designed and built by 3 Clever Students called ( Hefny - Mostafa - Islam ).
+                </p>
+                <p>
+                    This Project is sponsored by <b> Eng/ Hany Saad</b>, who helped us with a lot of knowledge, shared with us great information and right now you see his teaching with this page. <br>
+                    If he is reading this paragraph, we wanna thank him for his efforts and patience ...
+                </p>
+                <p class="thank">
+                    <span> Thank you </span>
+                </p> 
+                <p>
+                    After a lot of meetings, you could see that the brain is capable to do anything by thinking of problem as a combination of a little small problems and start to solve each problem till the human being will find out that the main problem that cannot be solved is solved d(^_^)b
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quidem minima consequatur voluptatem dolorum eum praesentium laudantium aliquid architecto in iusto, sapiente id odio molestiae maxime saepe! Consectetur, excepturi soluta?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi inventore quae? Aspernatur quasi reprehenderit magni cupiditate quibusdam, odit a deserunt dolores aperiam quas! Nobis soluta aspernatur mollitia neque repellat!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- About Ends here -->
+    <!-- Contact Us Starts here -->
+    <section class="contact-us" id="contact">
+        <div class="header">
+            <h3 class="text-center">Contact <span> Us </span>
+            </h3>
+        </div>
+        <div class="contact-content">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57124.690943847396!2d31.738091688035745!3d26.510693675267106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144f57ae2f37bb73%3A0x6e7654e2e714ef92!2z2YXYudmH2K8g2KrZg9mG2YjZhNmI2KzZitinINin2YTZhdi52YTZiNmF2KfYqiAtINmB2LHYuSDYs9mI2YfYp9isIElUSQ!5e0!3m2!1sar!2seg!4v1607095308141!5m2!1sar!2seg" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="form">
+                    <form action="index.html">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Name" required>
+                        <input type="text" placeholder="Phone">
+                        <textarea name="" id="" cols="30" rows="6" placeholder="Message"required></textarea>
+                        <div class="btn">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form> 
+                </div>
+        </div>
+    </section>
+    <!-- Contact Us Ends ehre -->
+    </main>
+<!-- Body Ends here -->
+<!-- Footer Starts here -->
+    <footer>
+        <div class="footer-paragraph">
+            This is filler to fill the place with a lot of words but I'm tired of lorem. 
+            <hr>
+        </div> 
+        <div class="new">
+            <form action="">
+                <label for="">
+                    News Letter
+                </label>
+                <input type="text" name="" id="" placeholder="Your Email">
+                <input type="submit" value="subscribe">
+            </form>
+        </div>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem.
+        <br>
+        It has been programmed & designed by Hefny Team.
+        </p>
+        <p>
+            Great Thanks to Mostafa & Islam for their efforts for the idea <3 .
+        </p>
+        <hr>
+        <div class="copyrights">
+            <a href="https://www.facebook.com/ITISohag/">
+                This project is for iti 3 months SWD track in Sohag.
+            </a>
+        </div>
+    </footer>
+<!-- Footer Ends here -->
+<!-- main JS functions script -->
+<script src="assets/javascript/home-main.js"></script>
+
+</body>
+</html>

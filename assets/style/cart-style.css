@@ -1,0 +1,207 @@
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered {
+    color: white;
+    font-size: 16px;
+    font: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed_width {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.inp-width {
+    width: 30%;
+}
+
+input {
+    text-align: center;
+}
+
+.line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid rgb(231, 228, 228);
+}
+
+.heading {
+    border-bottom: 1px solid rgb(231, 228, 228);
+    border-top: 1px solid rgb(231, 228, 228);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 20px;
+    color: grey;
+}
+
+td {
+    padding: 10px;
+}
+
+.black-btn {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.btn2 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: rgb(126, 126, 126);
+}
+
+.tb {
+    border-bottom: 1px solid rgb(231, 228, 228);
+}
+
+.right {
+    text-align: right;
+}
+
+.button-wrap {
+    display: flex;
+}
+
+.btn2:first-child {
+    margin-right: auto;
+}
+
+/* Footer Style Starts here */
+
+footer {
+    background-color: #01312e;
+    overflow: hidden;
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: 600;
+}
+
+footer .footer-paragraph {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    color: white;
+}
+
+footer .new {
+    padding: 40px 0px;
+}
+
+footer .new label {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+footer .new input[type="text"] {
+    width: 250px;
+    padding: 10px 20px;
+    color: grey;
+    margin: 0px;
+}
+
+footer .new input[type="text"]:focus {
+    outline: none;
+}
+
+footer .new input[type="submit"] {
+    width: 150px;
+    padding: 10px 20px;
+    margin-left: -10px;
+    background-color: #d2390a;
+    color: white;
+    border: solid 2px #d2390a;
+    transition: 0.5s;
+}
+
+footer .new input[type="submit"]:hover {
+    background-color: var(--main-color);
+    color: var(--bk-color);
+    border: solid 2px var(--main-color);
+    cursor: pointer;
+}
+
+footer p {
+    font-weight: normal;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px;
+    letter-spacing: 0px;
+    padding: 40px 0px;
+}
+
+/* copyrights Style Starts here */
+
+.copyrights a {
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--bk-color);
+    display: block;
+    padding: 20px 0px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.copyrights a:hover {
+    color: var(--main-color);
+}
+
+/* copyrights Style Ends here */
+
+/* Footer Style Ends here */
